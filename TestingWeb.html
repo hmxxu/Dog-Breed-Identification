@@ -2,10 +2,41 @@
 <html>
   <head>
     <title>My Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: rgb(10, 17, 40);
+        color: white;
+        padding: 20px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+      }
+      .github-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url('https://image.flaticon.com/icons/png/512/25/25231.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
+      .github-icon a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -99999px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Welcome to my website</h1>
+      <div class="github-icon">
+        <a href="https://www.google.com/" target="_blank">GitHub</a>
+      </div>
     </header>
     
     <main>
