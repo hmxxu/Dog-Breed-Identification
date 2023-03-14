@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Website</title>
+  <link rel="icon" href="dog-icon.png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgb(56, 52, 52);
+      color: black;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-align: center;
+    }
+
+    body {
+      background-color: rgb(32, 28, 28);
+      min-height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 48px;
+      padding: 50px 200px;
+      font-family: Tahoma, sans-serif;
+      color: rgba(77, 156, 213, 255);
+    }
+
+    h2 {
+      font-size: 20px;
+      padding-left: 200px;
+      color: rgba(156, 220, 254, 255);
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 48px;
+      padding: 20px;
+      font-family: Tahoma, sans-serif;
+      color: rgba(77, 156, 213, 255);
+    }
+
+    img {
+      margin-right: 200px;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: rgb(56, 52, 52);
+      border-radius: 10px 0 0 0;
+      padding: 5px;
+      box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.25);
+      z-index: 1;
+      color: white;
+    }
+
+
+    .center {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>Dog Breed Identification</h3>
+  </header>
+  <h1>
+    <p>Introduction</p>
+  </h1>
+
+  <img src="DogPic1-removebg-preview.png" alt="Example Image" align="right" width="400" height="400">
+
+  <h2>
+    <p>Are you curious about the different dog breeds in the world but don't know where to start?<br>
+      With so many breeds out there, it can be overwhelming to try and identify them all. But <br>
+      what if there was an easy way to identify any dog breed with just a photo? Introducing our <br>
+      new application that uses computer vision to identify over 300 dog breeds from photos. <br>
+      Discover the amazing diversity of the canine world and expand your knowledge of man's best <br>
+      friend with just a snap of a picture!
+    </p>
+  </h2>
+
+  <h1>
+    <p>Purpose</p>
+  </h1>
+
+  <h2>
+    <p>The main purpose of this project is to deliver a web application that could identify<br>
+      a dog by its breed given a good enough photo. This program could be helpful for people <br>
+      looking to adopt a dog or for helping people identify a lost dog.
+    </p>
+  </h2>
+
+  <h1>
+    <p>Implementation</p>
+  </h1>
+  <h2>
+    <p>In this project, we started by downloading data from Kaggle’s Dog Breed Identification<br>
+      and then parsing it to work with our training models. Along with this we also did some <br>
+      basic computer processing. Afterward, we trained both our ResNet18 and Darknet models with<br>
+      10222 images of dogs across 120 dog breeds. Lastly, we ran our newly made models against<br>
+      10357 new images of dogs.
+    </p>
+  </h2>
+
+  <img src="JDog-removebg-preview.png" alt="Example Image" align="right" width="400" height="400">
+
+  <h1>
+    <p>Data + Pre-Existing Components</p>
+  </h1>
+
+  <h2>
+    <p>
+    <ul>
+      <li>All of our training and test data can be downloaded from <a
+          href="https://www.kaggle.com/c/dog-breed-identification">Kaggle’s Dog Breed Identification competition</a>
+      </li>
+      <li>The training and testing code came from <a
+          href="https://colab.research.google.com/drive/1kHo8VT-onDxbtS3FM77VImG35h_K_Lav?usp=sharing">Tutorial 4 -
+          Transfer Learning to Birds.ipynb</a></li>
+      <li><a href="https://pytorch.org/hub/pytorch_vision_resnet/">ResNet18</a> is an open-source machine learning
+        framework that is part of PyTorch</li>
+      <li><a href="https://pjreddie.com/darknet/">DarkNet</a> is an open-source neural network framework written by our
+        professor Joseph Redmon</li>
+    </ul>
+    </p>
+  </h2>
+  <h1>
+    <p>Summary Video</p>
+  </h1>
+  <iframe class="center" width="1000" height="562.50" src="https://www.youtube.com/embed/EdQUw5wsPeY"
+    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  <h1>
+    <p>Tutorial Video</p>
+  </h1>
+  <iframe class="center" width="1000" height="562.50" src="https://www.youtube.com/embed/vtxF0Eu3w4Y"
+    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+  <footer>
+    <a href="https://github.com/hmxxu/hmxxu.github.io" target="_blank"><img src="GithubLogo.png" alt="Logo" height="50"
+        style="display: inline-block; margin: 0; padding: 0;"></a>
+    <a href="https://pjreddie.com/darknet/nightmare/" target="_blank"><img src="DarknetIcon.png" alt="Logo" height="50"
+        style="display: inline-block; margin: 0; padding: 0;"></a>
+  </footer>
+
+  <div class="sticker"></div>
+</body>
+
+</html>
